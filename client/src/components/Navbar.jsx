@@ -16,7 +16,7 @@ const Navbar = () => {
           <div className="flex justify-between h-16 items-center">
             <div className="flex-shrink-0">
               <a href="/" className="text-white text-xl font-bold">
-                CampSite
+                PropertyBuy
               </a>
             </div>
             <div className="hidden md:flex space-x-8">

@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send("Hello form Yelp camp")
+    res.send("Hello From The Real Estate App")
 })
 
 app.listen(3000, ()=> {
