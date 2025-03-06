@@ -28,10 +28,12 @@ const Navbar = () => {
               </a>
             </div>
             <div className="flex items-center space-x-4">
-              <button className="text-white flex items-center hover:text-gray-200 cursor-pointer">
-                <UserCircleIcon className="h-6 w-6 mr-1" />
-                Sign in
-              </button>
+              <a href="/Login">
+                <button className="text-white flex items-center hover:text-gray-200 cursor-pointer">
+                  <UserCircleIcon className="h-6 w-6 mr-1" />
+                  Sign in
+                </button>
+              </a>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
