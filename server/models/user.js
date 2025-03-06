@@ -14,6 +14,11 @@ const UserSchema = new Schema({
   img: {
     type: String,
   },
+  user: {
+    type: mongoose.Schema.Types.ObjectId, // Stores te suer objectId
+    ref: "User",
+    required: true,
+  },
 });
 
 const User = mongoose.model("User", UserSchema);
