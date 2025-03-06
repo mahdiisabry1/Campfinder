@@ -1,10 +1,11 @@
 import express from "express";
+import connectDB from "./lib/connectDB.js";
+
 const app = express();
+// code in between
+app.use(express.json);
 
-app.get('/', (req, res) => {
-    res.send("Hello From The Real Estate App")
-})
-
-app.listen(3000, ()=> {
-    console.log('Serving on port 3000')
-})
+app.listen(3000, () => {
+  connectDB();
+  console.log("Serving on port 3000");
+});

@@ -1,9 +1,3 @@
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-} from "@clerk/clerk-react";
 import { MenuIcon, UserCircleIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 
@@ -16,7 +10,7 @@ const Navbar = () => {
           <div className="flex justify-between h-16 items-center">
             <div className="flex-shrink-0">
               <a href="/" className="text-white text-xl font-bold">
-                PropertyBuy
+                Campfinder
               </a>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -29,22 +23,15 @@ const Navbar = () => {
               <a href="/services" className="text-white hover:text-gray-200">
                 Services
               </a>
-              <a href="/contect" className="text-white hover:text-gray-200">
+              <a href="/contact" className="text-white hover:text-gray-200">
                 Contact
               </a>
             </div>
             <div className="flex items-center space-x-4">
-              <SignedOut>
-                <SignInButton mode="modal">
-                  <button className="text-white flex items-center hover:text-gray-200">
-                    <UserCircleIcon className="h-6 w-6 mr-1" />
-                    Sign in
-                  </button>
-                </SignInButton>
-              </SignedOut>
-              <SignedIn>
-                <UserButton />
-              </SignedIn>
+              <button className="text-white flex items-center hover:text-gray-200 cursor-pointer">
+                <UserCircleIcon className="h-6 w-6 mr-1" />
+                Sign in
+              </button>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
@@ -64,25 +51,25 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
-                href="#"
+                href="/"
                 className="text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="/about"
                 className="text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 About
               </a>
               <a
-                href="#"
+                href="/services"
                 className="text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Services
               </a>
               <a
-                href="#"
+                href="/contact"
                 className="text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Contact

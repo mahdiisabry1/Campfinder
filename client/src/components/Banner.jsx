@@ -7,7 +7,7 @@ const Banner = () => {
         </div>
         <div className="bg-gray-200 w-[70%] h-80 mt-3 mb-3 pl-20 flex flex-col justify-center gap-4">
           <div className="">
-            <h1 className="text-6xl">Welcome to YelpCamp ! </h1>
+            <h1 className="text-6xl">Welcome to Campfinder ! </h1>
           </div>
           <div className="text-gray-900">
             <p>
