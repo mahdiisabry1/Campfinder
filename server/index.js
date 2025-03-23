@@ -3,7 +3,7 @@ import connectDB from "./lib/connectDB.js";
 
 const app = express();
 // code in between
-app.use(express.json);
+app.use(express.json());
 
 app.listen(3000, () => {
   connectDB();
